@@ -1,4 +1,4 @@
-// Get the user's input
+/* // Get the user's input
 const input = parseInt(prompt('Enter a number:'));
 
 // Function to check if a number is divisible by 2, 3, 5 or 7
@@ -24,4 +24,21 @@ if (isDivisible(input)) {
 } else {
     console.log('The number is not divisible by 2, 3, 5 or 7.');
     document.write('The number is divisible by 2, 3, 5 or 7.');
+} */
+
+const input = parseInt(prompt('Ingrese un numero'));
+
+if(input%2 == 0){
+    document.write(`El numero ${input} es divisible por 2`);
+}else if(input%3 == 0){
+    document.write(`El numero ${input} es divisible por 3`);
+}
+else if(input%5 == 0){
+    document.write(`El numero ${input} es divisible por 5`);
+}
+else if(input%7 == 0){
+    document.write(`El numero ${input} es divisible por 7`);
+}
+else{
+    document.write(`El numero ${input} no es divisible por ningun numero`);
 }
